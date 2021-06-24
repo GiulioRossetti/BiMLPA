@@ -1,7 +1,6 @@
 import unittest
 from BiMLPA import *
 
-
 class BiMLPATestCase(unittest.TestCase):
 
     def test_bimlpa_SqrtDeg(self):
@@ -16,7 +15,7 @@ class BiMLPATestCase(unittest.TestCase):
 
     def test_bimlpa(self):
 
-        G = generate_network_withName('southernwomen.net')
+        G = generate_network_with_name('southernwomen.net')
         bimlpa = BiMLPA(G, 0.3, 7)
         bimlpa.start()
         relabeling(G)

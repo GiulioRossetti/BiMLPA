@@ -32,7 +32,7 @@ class BiMLPA(object):
     def _label_to_list(self, propagaters):
         # propagaterが持つラベル数をmax_prop_label以下に
         # ラベルの重みの降順でソート
-        node2label  = dict(nx.get_node_attributes(self.G, 'label'))
+        node2label = dict(nx.get_node_attributes(self.G, 'label'))
         for node in propagaters:
             label = node2label[node]
             l = list(label.keys())
